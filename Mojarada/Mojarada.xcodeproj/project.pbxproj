@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B2195BBF286B62450024EF92 /* Mojarada WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B2195BBE286B62450024EF92 /* Mojarada WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2195BC4286B62460024EF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2195BC3286B62460024EF92 /* Assets.xcassets */; };
+		B2195BCA286B62460024EF92 /* Mojarada WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2195BC9286B62460024EF92 /* Mojarada WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B2195BCF286B62460024EF92 /* MojaradaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BCE286B62460024EF92 /* MojaradaApp.swift */; };
+		B2195BD1286B62460024EF92 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BD0286B62460024EF92 /* ContentView.swift */; };
+		B2195BD3286B62460024EF92 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BD2286B62460024EF92 /* NotificationController.swift */; };
+		B2195BD5286B62460024EF92 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BD4286B62460024EF92 /* NotificationView.swift */; };
+		B2195BD7286B62460024EF92 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BD6286B62460024EF92 /* ComplicationController.swift */; };
+		B2195BD9286B62470024EF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2195BD8286B62470024EF92 /* Assets.xcassets */; };
+		B2195BDC286B62470024EF92 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2195BDB286B62470024EF92 /* Preview Assets.xcassets */; };
+		B2195BE8286B62470024EF92 /* MojaradaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BE7286B62470024EF92 /* MojaradaTests.swift */; };
+		B2195BF2286B62470024EF92 /* MojaradaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BF1286B62470024EF92 /* MojaradaUITests.swift */; };
+		B2195BF4286B62470024EF92 /* MojaradaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BF3286B62470024EF92 /* MojaradaUITestsLaunchTests.swift */; };
+		B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195C0B286B62D50024EF92 /* TimeData.swift */; };
+		B2195C0E286B62F50024EF92 /* TimeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195C0D286B62F50024EF92 /* TimeDataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B2195BC0286B62450024EF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2195BB4286B62450024EF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2195BBD286B62450024EF92;
+			remoteInfo = "Mojarada WatchKit App";
+		};
+		B2195BCB286B62460024EF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2195BB4286B62450024EF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2195BC8286B62460024EF92;
+			remoteInfo = "Mojarada WatchKit Extension";
+		};
+		B2195BE4286B62470024EF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2195BB4286B62450024EF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2195BC8286B62460024EF92;
+			remoteInfo = "Mojarada WatchKit Extension";
+		};
+		B2195BEE286B62470024EF92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B2195BB4286B62450024EF92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2195BBD286B62450024EF92;
+			remoteInfo = "Mojarada WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2195BFA286B62470024EF92 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B2195BCA286B62460024EF92 /* Mojarada WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BFE286B62470024EF92 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B2195BBF286B62450024EF92 /* Mojarada WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B2195BBA286B62450024EF92 /* Mojarada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mojarada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2195BBE286B62450024EF92 /* Mojarada WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mojarada WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2195BC3286B62460024EF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2195BC9286B62460024EF92 /* Mojarada WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Mojarada WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2195BCE286B62460024EF92 /* MojaradaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojaradaApp.swift; sourceTree = "<group>"; };
+		B2195BD0286B62460024EF92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B2195BD2286B62460024EF92 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B2195BD4286B62460024EF92 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B2195BD6286B62460024EF92 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B2195BD8286B62470024EF92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2195BDB286B62470024EF92 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B2195BDD286B62470024EF92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2195BDE286B62470024EF92 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B2195BE3286B62470024EF92 /* MojaradaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MojaradaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2195BE7286B62470024EF92 /* MojaradaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojaradaTests.swift; sourceTree = "<group>"; };
+		B2195BED286B62470024EF92 /* MojaradaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MojaradaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2195BF1286B62470024EF92 /* MojaradaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojaradaUITests.swift; sourceTree = "<group>"; };
+		B2195BF3286B62470024EF92 /* MojaradaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojaradaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2195C0B286B62D50024EF92 /* TimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
+		B2195C0D286B62F50024EF92 /* TimeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B2195BC6286B62460024EF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BE0286B62470024EF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BEA286B62470024EF92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B2195BB3286B62450024EF92 = {
+			isa = PBXGroup;
+			children = (
+				B2195BC2286B62450024EF92 /* Mojarada WatchKit App */,
+				B2195BCD286B62460024EF92 /* Mojarada WatchKit Extension */,
+				B2195BE6286B62470024EF92 /* MojaradaTests */,
+				B2195BF0286B62470024EF92 /* MojaradaUITests */,
+				B2195BBB286B62450024EF92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B2195BBB286B62450024EF92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2195BBA286B62450024EF92 /* Mojarada.app */,
+				B2195BBE286B62450024EF92 /* Mojarada WatchKit App.app */,
+				B2195BC9286B62460024EF92 /* Mojarada WatchKit Extension.appex */,
+				B2195BE3286B62470024EF92 /* MojaradaTests.xctest */,
+				B2195BED286B62470024EF92 /* MojaradaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2195BC2286B62450024EF92 /* Mojarada WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B2195BC3286B62460024EF92 /* Assets.xcassets */,
+			);
+			path = "Mojarada WatchKit App";
+			sourceTree = "<group>";
+		};
+		B2195BCD286B62460024EF92 /* Mojarada WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B2195BCE286B62460024EF92 /* MojaradaApp.swift */,
+				B2195BD0286B62460024EF92 /* ContentView.swift */,
+				B2195BD6286B62460024EF92 /* ComplicationController.swift */,
+				B2195C09286B62990024EF92 /* Scene */,
+				B2195C08286B62770024EF92 /* Notification */,
+				B2195BD8286B62470024EF92 /* Assets.xcassets */,
+				B2195BDD286B62470024EF92 /* Info.plist */,
+				B2195BDE286B62470024EF92 /* PushNotificationPayload.apns */,
+				B2195BDA286B62470024EF92 /* Preview Content */,
+			);
+			path = "Mojarada WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B2195BDA286B62470024EF92 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B2195BDB286B62470024EF92 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B2195BE6286B62470024EF92 /* MojaradaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B2195BE7286B62470024EF92 /* MojaradaTests.swift */,
+			);
+			path = MojaradaTests;
+			sourceTree = "<group>";
+		};
+		B2195BF0286B62470024EF92 /* MojaradaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B2195BF1286B62470024EF92 /* MojaradaUITests.swift */,
+				B2195BF3286B62470024EF92 /* MojaradaUITestsLaunchTests.swift */,
+			);
+			path = MojaradaUITests;
+			sourceTree = "<group>";
+		};
+		B2195C08286B62770024EF92 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				B2195BD2286B62460024EF92 /* NotificationController.swift */,
+				B2195BD4286B62460024EF92 /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		B2195C09286B62990024EF92 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				B2195C0A286B62AB0024EF92 /* Model */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		B2195C0A286B62AB0024EF92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2195C0B286B62D50024EF92 /* TimeData.swift */,
+				B2195C0D286B62F50024EF92 /* TimeDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B2195BB9286B62450024EF92 /* Mojarada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2195BFF286B62470024EF92 /* Build configuration list for PBXNativeTarget "Mojarada" */;
+			buildPhases = (
+				B2195BB8286B62450024EF92 /* Resources */,
+				B2195BFE286B62470024EF92 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2195BC1286B62450024EF92 /* PBXTargetDependency */,
+			);
+			name = Mojarada;
+			productName = Mojarada;
+			productReference = B2195BBA286B62450024EF92 /* Mojarada.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B2195BBD286B62450024EF92 /* Mojarada WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2195BFB286B62470024EF92 /* Build configuration list for PBXNativeTarget "Mojarada WatchKit App" */;
+			buildPhases = (
+				B2195BBC286B62450024EF92 /* Resources */,
+				B2195BFA286B62470024EF92 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2195BCC286B62460024EF92 /* PBXTargetDependency */,
+			);
+			name = "Mojarada WatchKit App";
+			productName = "Mojarada WatchKit App";
+			productReference = B2195BBE286B62450024EF92 /* Mojarada WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B2195BC8286B62460024EF92 /* Mojarada WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2195BF7286B62470024EF92 /* Build configuration list for PBXNativeTarget "Mojarada WatchKit Extension" */;
+			buildPhases = (
+				B2195BC5286B62460024EF92 /* Sources */,
+				B2195BC6286B62460024EF92 /* Frameworks */,
+				B2195BC7286B62460024EF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mojarada WatchKit Extension";
+			productName = "Mojarada WatchKit Extension";
+			productReference = B2195BC9286B62460024EF92 /* Mojarada WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		B2195BE2286B62470024EF92 /* MojaradaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2195C02286B62470024EF92 /* Build configuration list for PBXNativeTarget "MojaradaTests" */;
+			buildPhases = (
+				B2195BDF286B62470024EF92 /* Sources */,
+				B2195BE0286B62470024EF92 /* Frameworks */,
+				B2195BE1286B62470024EF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2195BE5286B62470024EF92 /* PBXTargetDependency */,
+			);
+			name = MojaradaTests;
+			productName = MojaradaTests;
+			productReference = B2195BE3286B62470024EF92 /* MojaradaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B2195BEC286B62470024EF92 /* MojaradaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2195C05286B62470024EF92 /* Build configuration list for PBXNativeTarget "MojaradaUITests" */;
+			buildPhases = (
+				B2195BE9286B62470024EF92 /* Sources */,
+				B2195BEA286B62470024EF92 /* Frameworks */,
+				B2195BEB286B62470024EF92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B2195BEF286B62470024EF92 /* PBXTargetDependency */,
+			);
+			name = MojaradaUITests;
+			productName = MojaradaUITests;
+			productReference = B2195BED286B62470024EF92 /* MojaradaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B2195BB4286B62450024EF92 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					B2195BB9286B62450024EF92 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B2195BBD286B62450024EF92 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B2195BC8286B62460024EF92 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					B2195BE2286B62470024EF92 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B2195BC8286B62460024EF92;
+					};
+					B2195BEC286B62470024EF92 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = B2195BBD286B62450024EF92;
+					};
+				};
+			};
+			buildConfigurationList = B2195BB7286B62450024EF92 /* Build configuration list for PBXProject "Mojarada" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B2195BB3286B62450024EF92;
+			productRefGroup = B2195BBB286B62450024EF92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B2195BB9286B62450024EF92 /* Mojarada */,
+				B2195BBD286B62450024EF92 /* Mojarada WatchKit App */,
+				B2195BC8286B62460024EF92 /* Mojarada WatchKit Extension */,
+				B2195BE2286B62470024EF92 /* MojaradaTests */,
+				B2195BEC286B62470024EF92 /* MojaradaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B2195BB8286B62450024EF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BBC286B62450024EF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2195BC4286B62460024EF92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BC7286B62460024EF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2195BDC286B62470024EF92 /* Preview Assets.xcassets in Resources */,
+				B2195BD9286B62470024EF92 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BE1286B62470024EF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BEB286B62470024EF92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B2195BC5286B62460024EF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2195C0E286B62F50024EF92 /* TimeDataManager.swift in Sources */,
+				B2195BD3286B62460024EF92 /* NotificationController.swift in Sources */,
+				B2195BD1286B62460024EF92 /* ContentView.swift in Sources */,
+				B2195BD7286B62460024EF92 /* ComplicationController.swift in Sources */,
+				B2195BCF286B62460024EF92 /* MojaradaApp.swift in Sources */,
+				B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */,
+				B2195BD5286B62460024EF92 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BDF286B62470024EF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2195BE8286B62470024EF92 /* MojaradaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2195BE9286B62470024EF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2195BF4286B62470024EF92 /* MojaradaUITestsLaunchTests.swift in Sources */,
+				B2195BF2286B62470024EF92 /* MojaradaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B2195BC1286B62450024EF92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2195BBD286B62450024EF92 /* Mojarada WatchKit App */;
+			targetProxy = B2195BC0286B62450024EF92 /* PBXContainerItemProxy */;
+		};
+		B2195BCC286B62460024EF92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2195BC8286B62460024EF92 /* Mojarada WatchKit Extension */;
+			targetProxy = B2195BCB286B62460024EF92 /* PBXContainerItemProxy */;
+		};
+		B2195BE5286B62470024EF92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2195BC8286B62460024EF92 /* Mojarada WatchKit Extension */;
+			targetProxy = B2195BE4286B62470024EF92 /* PBXContainerItemProxy */;
+		};
+		B2195BEF286B62470024EF92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2195BBD286B62450024EF92 /* Mojarada WatchKit App */;
+			targetProxy = B2195BEE286B62470024EF92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B2195BF5286B62470024EF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B2195BF6286B62470024EF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2195BF8286B62470024EF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mojarada WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mojarada WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mojarada WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.Mojarada.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B2195BF9286B62470024EF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mojarada WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mojarada WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Mojarada WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.Mojarada.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		B2195BFC286B62470024EF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Mojarada_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mojarada WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.Mojarada.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B2195BFD286B62470024EF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Mojarada_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mojarada WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.Mojarada.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		B2195C00286B62470024EF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.Mojarada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B2195C01286B62470024EF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.Mojarada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B2195C03286B62470024EF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.MojaradaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mojarada WatchKit Extension.appex/Mojarada WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B2195C04286B62470024EF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.MojaradaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mojarada WatchKit Extension.appex/Mojarada WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		B2195C06286B62470024EF92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.MojaradaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Mojarada WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		B2195C07286B62470024EF92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HXUXMV396;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anna.MojaradaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Mojarada WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B2195BB7286B62450024EF92 /* Build configuration list for PBXProject "Mojarada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2195BF5286B62470024EF92 /* Debug */,
+				B2195BF6286B62470024EF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2195BF7286B62470024EF92 /* Build configuration list for PBXNativeTarget "Mojarada WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2195BF8286B62470024EF92 /* Debug */,
+				B2195BF9286B62470024EF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2195BFB286B62470024EF92 /* Build configuration list for PBXNativeTarget "Mojarada WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2195BFC286B62470024EF92 /* Debug */,
+				B2195BFD286B62470024EF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2195BFF286B62470024EF92 /* Build configuration list for PBXNativeTarget "Mojarada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2195C00286B62470024EF92 /* Debug */,
+				B2195C01286B62470024EF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2195C02286B62470024EF92 /* Build configuration list for PBXNativeTarget "MojaradaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2195C03286B62470024EF92 /* Debug */,
+				B2195C04286B62470024EF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2195C05286B62470024EF92 /* Build configuration list for PBXNativeTarget "MojaradaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2195C06286B62470024EF92 /* Debug */,
+				B2195C07286B62470024EF92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B2195BB4286B62450024EF92 /* Project object */;
+}
