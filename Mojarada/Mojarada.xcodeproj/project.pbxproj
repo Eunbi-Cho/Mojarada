@@ -22,6 +22,8 @@
 		B2195BF4286B62470024EF92 /* MojaradaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BF3286B62470024EF92 /* MojaradaUITestsLaunchTests.swift */; };
 		B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195C0B286B62D50024EF92 /* TimeData.swift */; };
 		B2195C0E286B62F50024EF92 /* TimeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195C0D286B62F50024EF92 /* TimeDataManager.swift */; };
+		B279F70328CCA4CD0078C993 /* topView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70228CCA4CD0078C993 /* topView.swift */; };
+		B279F70528CCA4F70078C993 /* myTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70428CCA4F70078C993 /* myTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		B2195BF3286B62470024EF92 /* MojaradaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojaradaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B2195C0B286B62D50024EF92 /* TimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
 		B2195C0D286B62F50024EF92 /* TimeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataManager.swift; sourceTree = "<group>"; };
+		B279F70228CCA4CD0078C993 /* topView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topView.swift; sourceTree = "<group>"; };
+		B279F70428CCA4F70078C993 /* myTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,8 @@
 			children = (
 				B2195BCE286B62460024EF92 /* MojaradaApp.swift */,
 				B2195BD0286B62460024EF92 /* ContentView.swift */,
+				B279F70428CCA4F70078C993 /* myTimer.swift */,
+				B279F70228CCA4CD0078C993 /* topView.swift */,
 				B2195BD6286B62460024EF92 /* ComplicationController.swift */,
 				B2195C09286B62990024EF92 /* Scene */,
 				B2195C08286B62770024EF92 /* Notification */,
@@ -414,11 +420,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2195C0E286B62F50024EF92 /* TimeDataManager.swift in Sources */,
+				B279F70528CCA4F70078C993 /* myTimer.swift in Sources */,
 				B2195BD3286B62460024EF92 /* NotificationController.swift in Sources */,
 				B2195BD1286B62460024EF92 /* ContentView.swift in Sources */,
 				B2195BD7286B62460024EF92 /* ComplicationController.swift in Sources */,
 				B2195BCF286B62460024EF92 /* MojaradaApp.swift in Sources */,
 				B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */,
+				B279F70328CCA4CD0078C993 /* topView.swift in Sources */,
 				B2195BD5286B62460024EF92 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
