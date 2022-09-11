@@ -31,7 +31,7 @@ ex) [Type] #이슈번호 커밋메세지 `git commit -m '[feat] #12 로그인 �
 
 
 ## :technologist: Authors
-- [@Terry](https://github.com/terry-koo) | [@Gary](https://github.com/Anti9uA) | [@Thina](https://github.com/yoo86) | [@Anna](https://github.com/Eunbi-Cho) | [@Sasha](https://github.com/erabhre)
+- [@Thina](https://github.com/yoo86) | [@Anna](https://github.com/Eunbi-Cho)
 
 ## :triangular_flag_on_post: Demo
 
