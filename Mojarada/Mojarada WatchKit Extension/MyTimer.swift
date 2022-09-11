@@ -1,5 +1,5 @@
 //
-//  timerView.swift
+//  MyTimer.swift
 //  Mojarada WatchKit Extension
 //
 //  Created by 조은비 on 2022/09/10.

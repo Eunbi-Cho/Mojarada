@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  Mojarada WatchKit Extension
 //
 //  Created by 조은비 on 2022/06/29.
@@ -7,15 +7,18 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        TabView {
+            LogView()
+            TimerView()
+        }
+        .tabViewStyle(PageTabViewStyle())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }

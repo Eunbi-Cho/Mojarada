@@ -1,5 +1,5 @@
 //
-//  timerView.swift
+//  TimerView.swift
 //  Mojarada WatchKit Extension
 //
 //  Created by 조은비 on 2022/09/11.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct timerView: View {
+struct TimerView: View {
     @ObservedObject var myTimer = MyTimer()
     @State private var animate = false
     @State private var bgColor = Color.black
@@ -29,7 +29,7 @@ struct timerView: View {
                     }
                 }
             VStack {
-                topView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds)
+                TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds)
                 HStack {
                     Text("\(hours)")
                     Text(" : ")
@@ -84,7 +84,6 @@ struct timerView: View {
 
 struct timerView_Previews: PreviewProvider {
     static var previews: some View {
-        timerView()
+        TimerView()
     }
 }
-

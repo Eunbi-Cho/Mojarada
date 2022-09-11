@@ -1,5 +1,5 @@
 //
-//  topView.swift
+//  TopView.swift
 //  Mojarada WatchKit Extension
 //
 //  Created by 조은비 on 2022/09/10.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct topView: View {
+struct TopView: View {
     @Binding var timerIsPaused: Bool
     @Binding var hours: Int
     @Binding var minutes: Int
