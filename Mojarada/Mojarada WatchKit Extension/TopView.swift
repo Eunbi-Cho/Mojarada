@@ -21,14 +21,14 @@ struct TopView: View {
                 }, label: {
                     Image(systemName: "minus.circle.fill")
                 })
-                .frame(width: 20, height: 20)
+                .buttonStyle(PlainButtonStyle())
                 Text("30 min")
-                       Button(action: {
-                           
-                       }, label: {
-                           Image(systemName: "plus.circle.fill")
-                       })
-                       .frame(width: 20, height: 20)
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "plus.circle.fill")
+                })
+                .buttonStyle(PlainButtonStyle())
             }
         } else {
             HStack {

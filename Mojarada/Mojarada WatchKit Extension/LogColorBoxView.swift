@@ -20,7 +20,7 @@ struct LogColorBoxView: View {
                                 .scaledToFit()
                                 .frame(width: 32)
                         }
-                        .frame(width: 32, height: 32)
+                        .buttonStyle(PlainButtonStyle())
                     }
                 }
             }
