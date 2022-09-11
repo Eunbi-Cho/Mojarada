@@ -16,11 +16,12 @@ struct TimerView: View {
     @State var seconds: Int = 0
     @State var timerIsPaused: Bool = true
     @State var timer: Timer? = nil
+    @Binding var goalTime: Double
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .frame(width: 180 , height: 160)
+            RoundedRectangle(cornerRadius: 20)
+                .frame(width: 160 , height: 160)
                 .foregroundColor(Color.white)
                 .colorMultiply(self.bgColor)
                 .onAppear() {
@@ -29,7 +30,7 @@ struct TimerView: View {
                     }
                 }
             VStack {
-                TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds)
+                TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds, goalTime: $goalTime)
                 HStack {
                     Text("\(hours)")
                     Text(" : ")
@@ -43,8 +44,8 @@ struct TimerView: View {
                     timerIsPaused ? startTimer() : stopTimer()
                 }, label: {
                     ZStack {
-                        RoundedRectangle(cornerRadius: 8)
-                            .frame(width: 140, height: 40)
+                        RoundedRectangle(cornerRadius: 12)
+                            .frame(width: 130, height: 40)
                             .foregroundColor(.white)
                         Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
                             .foregroundColor(.green)
@@ -82,8 +83,8 @@ struct TimerView: View {
 }
 
 
-struct timerView_Previews: PreviewProvider {
-    static var previews: some View {
-        TimerView()
-    }
-}
+//struct timerView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TimerView()
+//    }
+//}
