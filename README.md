@@ -1,6 +1,6 @@
 # 🌱 Mojarada
-> 넌 아직 '모'자라다! <br><br/>
 유저가 설정한 목표 시간 달성률을 모🌱를 통해 시각적으로 얼마나 성취했는지 볼 수 있는 애플 워치 앱
+> 넌 아직 '모'자라다!
 
 [![iOS](https://img.shields.io/badge/Swift-watchOS-51a9e8?logo=Swift)](https://img.shields.io/badge/<Swift>-<watchOS>-<orange>)
 
