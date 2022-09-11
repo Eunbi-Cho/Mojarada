@@ -1,7 +1,7 @@
 # 🌱 Mojarada
 넌 아직 모자라다!
 
-![iOS](https://img.shields.io/badge/Swift-iOS-51a9e8?logo=Swift)
+[![iOS](https://img.shields.io/badge/Swift-iOS-51a9e8?logo=Swift)](https://img.shields.io/badge/<Swift>-<watchOS>-<orange>)
 
 ## Git Commit Message
 |Type|Subject|
