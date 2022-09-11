@@ -19,41 +19,52 @@ struct TimerView: View {
     @Binding var goalTime: Double
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .frame(width: 160 , height: 160)
-                .foregroundColor(Color.white)
-                .colorMultiply(self.bgColor)
-                .onAppear() {
-                    withAnimation(.easeInOut(duration: 10)) {
-                        self.bgColor = Color.accentColor
+        VStack {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(width: 180 , height: 110)
+                    .foregroundColor(Color.white)
+                    .colorMultiply(self.bgColor)
+                VStack {
+                    TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds, goalTime: $goalTime)
+                    HStack {
+                        Text("\(hours, specifier: "%02d")")
+                            .frame(width: 40)
+                        Text(":")
+                        Text("\(minutes, specifier: "%02d")")
+                            .frame(width: 40)
+                        Text(":")
+                        Text("\(seconds, specifier: "%02d")")
+                            .frame(width: 40)
                     }
+                    .font(.title2)
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
                 }
-            VStack {
-                TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds, goalTime: $goalTime)
-                HStack {
-                    Text("\(hours)")
-                    Text(" : ")
-                    Text("\(minutes)")
-                    Text(" : ")
-                    Text("\(seconds)")
-                }
-                .font(.title2)
-                .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                Button(action: {
-                    timerIsPaused ? startTimer() : stopTimer()
-                }, label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 12)
-                            .frame(width: 130, height: 40)
-                            .foregroundColor(.white)
-                        Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
-                            .foregroundColor(.green)
-                            .font(.title3)
-                    }
-                })
-                .buttonStyle(PlainButtonStyle())
             }
+            Button(action: {
+                if goalTime < 1 {
+                    self.disabled(true)
+                } else {
+                    colorChange()
+                    timerIsPaused ? startTimer() : stopTimer()
+                }
+            }, label: {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(width: 180, height: 40)
+                        .foregroundColor(.accentColor)
+                    Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
+                        .foregroundColor(.white)
+                        .font(.title3)
+                }
+            })
+            .buttonStyle(PlainButtonStyle())
+        }
+    }
+    
+    func colorChange() {
+        withAnimation(.easeInOut(duration: goalTime * 60)) {
+            bgColor = Color.accentColor
         }
     }
     
@@ -79,7 +90,6 @@ struct TimerView: View {
         timer?.invalidate()
         timer = nil
     }
-    
 }
 
 

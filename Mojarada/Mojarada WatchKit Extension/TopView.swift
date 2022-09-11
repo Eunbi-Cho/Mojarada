@@ -38,10 +38,7 @@ struct TopView: View {
                 .buttonStyle(PlainButtonStyle())
             }
         } else {
-            HStack {
-                Image(systemName: "hourglass")
-                Text("\(goalTime)분")
-            }
+            Text("목표시간 \(goalTime, specifier: "%.f")분")
         }
     }
 }
