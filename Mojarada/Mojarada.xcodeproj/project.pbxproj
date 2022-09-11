@@ -172,8 +172,8 @@
 		B2195BCD286B62460024EF92 /* Mojarada WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B2195BCE286B62460024EF92 /* MojaradaApp.swift */,
 				B2195BD0286B62460024EF92 /* MainView.swift */,
+				B2195BCE286B62460024EF92 /* MojaradaApp.swift */,
 				B279F70628CDBD4C0078C993 /* TimerView.swift */,
 				B279F70428CCA4F70078C993 /* MyTimer.swift */,
 				B279F70228CCA4CD0078C993 /* TopView.swift */,

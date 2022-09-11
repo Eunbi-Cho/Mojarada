@@ -14,6 +14,7 @@ struct MainView: View {
             TimerView()
         }
         .tabViewStyle(PageTabViewStyle())
+        .navigationBarTitle("Mo")
     }
 }
 

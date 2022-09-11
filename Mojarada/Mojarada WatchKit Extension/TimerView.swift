@@ -18,40 +18,43 @@ struct TimerView: View {
     @State var timer: Timer? = nil
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 10)
-                .frame(width: 180 , height: 180)
-                .foregroundColor(Color.white)
-                .colorMultiply(self.bgColor)
-                .onAppear() {
-                    withAnimation(.easeInOut(duration: 10)) {
-                        self.bgColor = Color.green
+        VStack {
+            Spacer()
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .frame(width: 180 , height: 170)
+                    .foregroundColor(Color.white)
+                    .colorMultiply(self.bgColor)
+                    .onAppear() {
+                        withAnimation(.easeInOut(duration: 10)) {
+                            self.bgColor = Color.accentColor
+                        }
                     }
-                }
-            VStack {
-                TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds)
-                HStack {
-                    Text("\(hours)")
-                    Text(" : ")
-                    Text("\(minutes)")
-                    Text(" : ")
-                    Text("\(seconds)")
-                }
-                .font(.title2)
-                .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                Button(action: {
-                    timerIsPaused ? startTimer() : stopTimer()
-                }, label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 8)
-                            .frame(width: 140, height: 50)
-                            .foregroundColor(.white)
-                        Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
-                            .foregroundColor(.green)
-                            .font(.title3)
+                VStack {
+                    TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds)
+                    HStack {
+                        Text("\(hours)")
+                        Text(" : ")
+                        Text("\(minutes)")
+                        Text(" : ")
+                        Text("\(seconds)")
                     }
-                })
-                .frame(width: 160, height: 50)
+                    .font(.title2)
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                    Button(action: {
+                        timerIsPaused ? startTimer() : stopTimer()
+                    }, label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 8)
+                                .frame(width: 140, height: 50)
+                                .foregroundColor(.white)
+                            Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
+                                .foregroundColor(.green)
+                                .font(.title3)
+                        }
+                    })
+                    .frame(width: 160, height: 50)
+                }
             }
         }
     }
