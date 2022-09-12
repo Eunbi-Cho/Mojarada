@@ -19,51 +19,68 @@ struct TimerView: View {
     @Binding var goalTime: Double
     
     var body: some View {
-        VStack {
-            ZStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: 180 , height: 110)
-                    .foregroundColor(Color.white)
-                    .colorMultiply(self.bgColor)
-                VStack {
-                    TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds, goalTime: $goalTime)
-                    HStack {
-                        Text("\(hours, specifier: "%02d")")
-                            .frame(width: 40)
-                        Text(":")
-                        Text("\(minutes, specifier: "%02d")")
-                            .frame(width: 40)
-                        Text(":")
-                        Text("\(seconds, specifier: "%02d")")
-                            .frame(width: 40)
-                    }
-                    .font(.title2)
-                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+        if self.seconds >= 10 {
+            VStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(width: 80 , height: 80)
+                        .foregroundColor(Color.white)
+                        .colorMultiply(self.bgColor)
+                    Image(systemName: "checkmark")
+                        .font(.title)
                 }
+                Text("모심기 완료")
+                    .foregroundColor(.accentColor)
+                    .bold()
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 2, trailing: 0))
+                Text("오늘도 한시간을 채웠군요")
+                    .multilineTextAlignment(.center)
             }
-            Button(action: {
-                if goalTime < 1 {
-                    self.disabled(true)
-                } else {
-                    colorChange()
-                    timerIsPaused ? startTimer() : stopTimer()
-                }
-            }, label: {
+        } else {
+            VStack {
                 ZStack {
                     RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 180, height: 40)
-                        .foregroundColor(.accentColor)
-                    Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
-                        .foregroundColor(.white)
-                        .font(.title3)
+                        .frame(width: 180 , height: 110)
+                        .foregroundColor(Color.white)
+                        .colorMultiply(self.bgColor)
+                    VStack {
+                        TopView()
+                            .padding(.top, 4)
+                        HStack {
+                            Text("\(minutes, specifier: "%02d")")
+                                .bold()
+                                .frame(width: 60)
+                            Text(":")
+                                .bold()
+                            Text("\(seconds, specifier: "%02d")")
+                                .bold()
+                                .frame(width: 60)
+                        }
+                        .font(.title)
+                        .padding(EdgeInsets(top: 6, leading: 0, bottom: 10, trailing: 0))
+                    }
                 }
-            })
-            .buttonStyle(PlainButtonStyle())
+                .padding(.bottom, 4)
+                Button(action: {
+                    colorChange()
+                    timerIsPaused ? startTimer() : stopTimer()
+                }, label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 180, height: 40)
+                            .foregroundColor(.accentColor)
+                        Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
+                            .foregroundColor(.white)
+                            .font(.title3)
+                    }
+                })
+                .buttonStyle(PlainButtonStyle())
+            }
         }
     }
     
     func colorChange() {
-        withAnimation(.easeInOut(duration: goalTime * 60)) {
+        withAnimation(.easeInOut(duration: 10)) {
             bgColor = Color.accentColor
         }
     }
