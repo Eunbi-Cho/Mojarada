@@ -21,22 +21,24 @@ struct CurrentLogView: View {
     var body: some View {
         LazyVGrid(columns: columns) {
             ForEach((0..<25).reversed(), id: \.self) { i in
+                let logDate = Date(timeIntervalSinceNow: 86400*Double(-i))
                 Button {
-                    print()
+                    print(logDate)
                 } label: {
                     RoundedRectangle(cornerRadius: 8)
                         .scaledToFit()
                         .frame(width: 32)
                         .overlay {
-                            Text(Date(timeIntervalSinceNow: 86400*Double(-i)), formatter: CurrentLogView.dateformatter)
+                            Text(logDate, formatter: CurrentLogView.dateformatter)
                                 .foregroundColor(.black)
-                                .font(.system(size: 5))
+                                .font(.system(size: 10))
                         }
                 }
                 .buttonStyle(PlainButtonStyle())
             }
         }
         .offset(x: 0, y: 10)
+        .padding(10)
     }
 }
 
