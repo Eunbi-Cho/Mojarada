@@ -10,12 +10,12 @@ import SwiftUI
 struct LogView: View {
     var body: some View {
         NavigationView {
-            ScrollView {
-                LogColorBoxView()
-            }
+            CurrentLogView()
         }
     }
 }
+
+//    .digitalCrownRotation($position, from: 13, through: 2, by: 5)
 
 struct LogView_Previews: PreviewProvider {
     static var previews: some View {

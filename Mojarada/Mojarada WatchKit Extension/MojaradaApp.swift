@@ -12,7 +12,7 @@ struct MojaradaApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                MainView()
+                LogView()
             }
         }
 

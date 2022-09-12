@@ -10,7 +10,6 @@
 		B2195BBF286B62450024EF92 /* Mojarada WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B2195BBE286B62450024EF92 /* Mojarada WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B2195BC4286B62460024EF92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2195BC3286B62460024EF92 /* Assets.xcassets */; };
 		B2195BCA286B62460024EF92 /* Mojarada WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B2195BC9286B62460024EF92 /* Mojarada WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B2195BCF286B62460024EF92 /* MojaradaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BCE286B62460024EF92 /* MojaradaApp.swift */; };
 		B2195BD1286B62460024EF92 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BD0286B62460024EF92 /* MainView.swift */; };
 		B2195BD3286B62460024EF92 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BD2286B62460024EF92 /* NotificationController.swift */; };
 		B2195BD5286B62460024EF92 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BD4286B62460024EF92 /* NotificationView.swift */; };
@@ -26,7 +25,8 @@
 		B279F70528CCA4F70078C993 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70428CCA4F70078C993 /* MyTimer.swift */; };
 		B279F70728CDBD4D0078C993 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70628CDBD4C0078C993 /* TimerView.swift */; };
 		EE101B8C28CCB4CE00F6059D /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE101B8B28CCB4CE00F6059D /* LogView.swift */; };
-		EE101B8E28CCB93200F6059D /* LogColorBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE101B8D28CCB93200F6059D /* LogColorBoxView.swift */; };
+		EE101B8E28CCB93200F6059D /* CurrentLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE101B8D28CCB93200F6059D /* CurrentLogView.swift */; };
+		EE101B9928CF96B100F6059D /* MojaradaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BCE286B62460024EF92 /* MojaradaApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +110,7 @@
 		B279F70428CCA4F70078C993 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 		B279F70628CDBD4C0078C993 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		EE101B8B28CCB4CE00F6059D /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
-		EE101B8D28CCB93200F6059D /* LogColorBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogColorBoxView.swift; sourceTree = "<group>"; };
+		EE101B8D28CCB93200F6059D /* CurrentLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,14 +172,14 @@
 		B2195BCD286B62460024EF92 /* Mojarada WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B2195BD0286B62460024EF92 /* MainView.swift */,
+				B2195BD6286B62460024EF92 /* ComplicationController.swift */,
 				B2195BCE286B62460024EF92 /* MojaradaApp.swift */,
+				B2195BD0286B62460024EF92 /* MainView.swift */,
 				B279F70628CDBD4C0078C993 /* TimerView.swift */,
 				B279F70428CCA4F70078C993 /* MyTimer.swift */,
 				B279F70228CCA4CD0078C993 /* TopView.swift */,
-				B2195BD6286B62460024EF92 /* ComplicationController.swift */,
 				EE101B8B28CCB4CE00F6059D /* LogView.swift */,
-				EE101B8D28CCB93200F6059D /* LogColorBoxView.swift */,
+				EE101B8D28CCB93200F6059D /* CurrentLogView.swift */,
 				B2195C09286B62990024EF92 /* Scene */,
 				B2195C08286B62770024EF92 /* Notification */,
 				B2195BD8286B62470024EF92 /* Assets.xcassets */,
@@ -428,14 +428,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE101B9928CF96B100F6059D /* MojaradaApp.swift in Sources */,
 				B2195C0E286B62F50024EF92 /* TimeDataManager.swift in Sources */,
 				B279F70528CCA4F70078C993 /* MyTimer.swift in Sources */,
 				B2195BD3286B62460024EF92 /* NotificationController.swift in Sources */,
-				EE101B8E28CCB93200F6059D /* LogColorBoxView.swift in Sources */,
+				EE101B8E28CCB93200F6059D /* CurrentLogView.swift in Sources */,
 				B2195BD1286B62460024EF92 /* MainView.swift in Sources */,
 				B279F70728CDBD4D0078C993 /* TimerView.swift in Sources */,
 				B2195BD7286B62460024EF92 /* ComplicationController.swift in Sources */,
-				B2195BCF286B62460024EF92 /* MojaradaApp.swift in Sources */,
 				EE101B8C28CCB4CE00F6059D /* LogView.swift in Sources */,
 				B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */,
 				B279F70328CCA4CD0078C993 /* TopView.swift in Sources */,
