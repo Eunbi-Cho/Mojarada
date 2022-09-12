@@ -21,7 +21,6 @@
 		B2195BF4286B62470024EF92 /* MojaradaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BF3286B62470024EF92 /* MojaradaUITestsLaunchTests.swift */; };
 		B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195C0B286B62D50024EF92 /* TimeData.swift */; };
 		B2195C0E286B62F50024EF92 /* TimeDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195C0D286B62F50024EF92 /* TimeDataManager.swift */; };
-		B279F70328CCA4CD0078C993 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70228CCA4CD0078C993 /* TopView.swift */; };
 		B279F70528CCA4F70078C993 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70428CCA4F70078C993 /* MyTimer.swift */; };
 		B279F70728CDBD4D0078C993 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70628CDBD4C0078C993 /* TimerView.swift */; };
 		EE101B8C28CCB4CE00F6059D /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE101B8B28CCB4CE00F6059D /* LogView.swift */; };
@@ -106,7 +105,6 @@
 		B2195BF3286B62470024EF92 /* MojaradaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MojaradaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B2195C0B286B62D50024EF92 /* TimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeData.swift; sourceTree = "<group>"; };
 		B2195C0D286B62F50024EF92 /* TimeDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDataManager.swift; sourceTree = "<group>"; };
-		B279F70228CCA4CD0078C993 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		B279F70428CCA4F70078C993 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 		B279F70628CDBD4C0078C993 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		EE101B8B28CCB4CE00F6059D /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				B2195BD0286B62460024EF92 /* MainView.swift */,
 				B279F70628CDBD4C0078C993 /* TimerView.swift */,
 				B279F70428CCA4F70078C993 /* MyTimer.swift */,
-				B279F70228CCA4CD0078C993 /* TopView.swift */,
 				EE101B8B28CCB4CE00F6059D /* LogView.swift */,
 				EE101B8D28CCB93200F6059D /* CurrentLogView.swift */,
 				B2195C09286B62990024EF92 /* Scene */,
@@ -438,7 +435,6 @@
 				B2195BD7286B62460024EF92 /* ComplicationController.swift in Sources */,
 				EE101B8C28CCB4CE00F6059D /* LogView.swift in Sources */,
 				B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */,
-				B279F70328CCA4CD0078C993 /* TopView.swift in Sources */,
 				B2195BD5286B62460024EF92 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

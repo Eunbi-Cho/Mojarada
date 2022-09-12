@@ -16,7 +16,6 @@ struct TimerView: View {
     @State var seconds: Int = 0
     @State var timerIsPaused: Bool = true
     @State var timer: Timer? = nil
-    @Binding var goalTime: Double
     
     var body: some View {
         if self.seconds >= 10 {
@@ -44,7 +43,7 @@ struct TimerView: View {
                         .foregroundColor(Color.white)
                         .colorMultiply(self.bgColor)
                     VStack {
-                        TopView()
+                        Text("딱 한시간만 하자!")
                             .padding(.top, 4)
                         HStack {
                             Text("\(minutes, specifier: "%02d")")

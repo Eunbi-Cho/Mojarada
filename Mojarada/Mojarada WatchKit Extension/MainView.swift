@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var goalTime = 0.0
-    
     var body: some View {
         TabView {
             LogView()
-            TimerView(goalTime: $goalTime)
+            TimerView()
         }
         .tabViewStyle(PageTabViewStyle())
         .navigationBarTitle("모자라다")
