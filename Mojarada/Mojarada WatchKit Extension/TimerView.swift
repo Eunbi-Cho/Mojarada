@@ -10,13 +10,15 @@ import SwiftUI
 struct TimerView: View {
     @ObservedObject var myTimer = MyTimer()
     @State private var animate = false
-    @State private var bgColor = Color.black
+    @Binding var bgColor: Color
     @State var hours: Int = 0
     @State var minutes: Int = 0
     @State var seconds: Int = 0
     @State var timerIsPaused: Bool = true
     @State var timer: Timer? = nil
     @Binding var goalTime: Double
+    
+    var colorData = ColorData()
     
     var body: some View {
         ZStack {
@@ -57,6 +59,16 @@ struct TimerView: View {
         }
     }
     
+<<<<<<< Updated upstream
+=======
+    func colorChange() {
+        withAnimation(.easeInOut(duration: 10)) {
+            bgColor = Color.accentColor
+            colorData.saveColor(color: bgColor)
+        }
+    }
+    
+>>>>>>> Stashed changes
     func startTimer() {
         timerIsPaused = false
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTimer in

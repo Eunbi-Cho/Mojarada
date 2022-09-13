@@ -24,9 +24,9 @@
 		B279F70328CCA4CD0078C993 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70228CCA4CD0078C993 /* TopView.swift */; };
 		B279F70528CCA4F70078C993 /* MyTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70428CCA4F70078C993 /* MyTimer.swift */; };
 		B279F70728CDBD4D0078C993 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B279F70628CDBD4C0078C993 /* TimerView.swift */; };
-		EE101B8C28CCB4CE00F6059D /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE101B8B28CCB4CE00F6059D /* LogView.swift */; };
 		EE101B8E28CCB93200F6059D /* CurrentLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE101B8D28CCB93200F6059D /* CurrentLogView.swift */; };
 		EE101B9928CF96B100F6059D /* MojaradaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2195BCE286B62460024EF92 /* MojaradaApp.swift */; };
+		EE5E0CFF28D05290000D198B /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5E0CFE28D05290000D198B /* ColorData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,8 +109,8 @@
 		B279F70228CCA4CD0078C993 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		B279F70428CCA4F70078C993 /* MyTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTimer.swift; sourceTree = "<group>"; };
 		B279F70628CDBD4C0078C993 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		EE101B8B28CCB4CE00F6059D /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		EE101B8D28CCB93200F6059D /* CurrentLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLogView.swift; sourceTree = "<group>"; };
+		EE5E0CFE28D05290000D198B /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,9 +177,13 @@
 				B2195BD0286B62460024EF92 /* MainView.swift */,
 				B279F70628CDBD4C0078C993 /* TimerView.swift */,
 				B279F70428CCA4F70078C993 /* MyTimer.swift */,
+<<<<<<< Updated upstream
 				B279F70228CCA4CD0078C993 /* TopView.swift */,
 				EE101B8B28CCB4CE00F6059D /* LogView.swift */,
+=======
+>>>>>>> Stashed changes
 				EE101B8D28CCB93200F6059D /* CurrentLogView.swift */,
+				EE5E0CFE28D05290000D198B /* ColorData.swift */,
 				B2195C09286B62990024EF92 /* Scene */,
 				B2195C08286B62770024EF92 /* Notification */,
 				B2195BD8286B62470024EF92 /* Assets.xcassets */,
@@ -436,10 +440,10 @@
 				B2195BD1286B62460024EF92 /* MainView.swift in Sources */,
 				B279F70728CDBD4D0078C993 /* TimerView.swift in Sources */,
 				B2195BD7286B62460024EF92 /* ComplicationController.swift in Sources */,
-				EE101B8C28CCB4CE00F6059D /* LogView.swift in Sources */,
 				B2195C0C286B62D50024EF92 /* TimeData.swift in Sources */,
 				B279F70328CCA4CD0078C993 /* TopView.swift in Sources */,
 				B2195BD5286B62460024EF92 /* NotificationView.swift in Sources */,
+				EE5E0CFF28D05290000D198B /* ColorData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
