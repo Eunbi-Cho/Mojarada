@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var bgColor = Color.black
+    
     var body: some View {
         TabView {
-            LogView()
-            TimerView()
+            CurrentLogView(bgColor: $bgColor, colorData: ColorData())
+            TimerView(bgColor: $bgColor)
         }
         .tabViewStyle(PageTabViewStyle())
         .navigationBarTitle("모자라다")

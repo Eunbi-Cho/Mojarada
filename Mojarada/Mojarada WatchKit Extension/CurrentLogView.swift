@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CurrentLogView: View {
+    @Binding var bgColor: Color
+    
+    var colorData: ColorData
     var columns: [GridItem] = Array(repeating: .init(.adaptive(minimum: 30, maximum: .infinity)), count: 5)
     var today = Date()
 
@@ -28,6 +31,7 @@ struct CurrentLogView: View {
                     RoundedRectangle(cornerRadius: 8)
                         .scaledToFit()
                         .frame(width: 32)
+                        .foregroundColor(bgColor)
                         .overlay {
                             Text(logDate, formatter: CurrentLogView.dateformatter)
                                 .foregroundColor(.black)
@@ -39,13 +43,16 @@ struct CurrentLogView: View {
         }
         .offset(x: 0, y: 10)
         .padding(10)
+        .onAppear {
+            bgColor = colorData.loadColor()
+        }
     }
 }
 
 
 
-struct LogColorBoxView_Previews: PreviewProvider {
-    static var previews: some View {
-        CurrentLogView()
-    }
-}
+//struct LogColorBoxView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CurrentLogView()
+//    }
+//}
