@@ -16,41 +16,62 @@ struct TimerView: View {
     @State var seconds: Int = 0
     @State var timerIsPaused: Bool = true
     @State var timer: Timer? = nil
-    @Binding var goalTime: Double
     
     var colorData = ColorData()
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .frame(width: 160 , height: 160)
-                .foregroundColor(Color.white)
-                .colorMultiply(self.bgColor)
-                .onAppear() {
-                    withAnimation(.easeInOut(duration: 10)) {
-                        self.bgColor = Color.accentColor
+        if self.seconds >= 10 {
+            VStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 20)
+                        .frame(width: 80 , height: 80)
+                        .foregroundColor(Color.white)
+                        .colorMultiply(self.bgColor)
+                    Image(systemName: "checkmark")
+                        .font(.title)
+                }
+                Text("모심기 완료")
+                    .foregroundColor(.accentColor)
+                    .bold()
+                    .padding(EdgeInsets(top: 10, leading: 0, bottom: 2, trailing: 0))
+                Text("오늘도 한시간을 채웠군요")
+                    .multilineTextAlignment(.center)
+            }
+        } else {
+            VStack {
+                ZStack {
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(width: 180 , height: 110)
+                        .foregroundColor(Color.white)
+                        .colorMultiply(self.bgColor)
+                    VStack {
+                        Text("딱 한시간만 하자!")
+                            .padding(.top, 4)
+                        HStack {
+                            Text("\(minutes, specifier: "%02d")")
+                                .bold()
+                                .frame(width: 60)
+                            Text(":")
+                                .bold()
+                            Text("\(seconds, specifier: "%02d")")
+                                .bold()
+                                .frame(width: 60)
+                        }
+                        .font(.title)
+                        .padding(EdgeInsets(top: 6, leading: 0, bottom: 10, trailing: 0))
                     }
                 }
-            VStack {
-                TopView(timerIsPaused: $timerIsPaused, hours: $hours, minutes: $minutes, seconds: $seconds, goalTime: $goalTime)
-                HStack {
-                    Text("\(hours)")
-                    Text(" : ")
-                    Text("\(minutes)")
-                    Text(" : ")
-                    Text("\(seconds)")
-                }
-                .font(.title2)
-                .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                .padding(.bottom, 4)
                 Button(action: {
+                    colorChange()
                     timerIsPaused ? startTimer() : stopTimer()
                 }, label: {
                     ZStack {
-                        RoundedRectangle(cornerRadius: 12)
-                            .frame(width: 130, height: 40)
-                            .foregroundColor(.white)
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 180, height: 40)
+                            .foregroundColor(.accentColor)
                         Image(systemName: timerIsPaused ? "play.fill" : "pause.fill")
-                            .foregroundColor(.green)
+                            .foregroundColor(.white)
                             .font(.title3)
                     }
                 })
@@ -58,17 +79,13 @@ struct TimerView: View {
             }
         }
     }
-    
-<<<<<<< Updated upstream
-=======
     func colorChange() {
         withAnimation(.easeInOut(duration: 10)) {
             bgColor = Color.accentColor
             colorData.saveColor(color: bgColor)
         }
     }
-    
->>>>>>> Stashed changes
+ 
     func startTimer() {
         timerIsPaused = false
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){ tempTimer in
@@ -91,7 +108,6 @@ struct TimerView: View {
         timer?.invalidate()
         timer = nil
     }
-    
 }
 
 
