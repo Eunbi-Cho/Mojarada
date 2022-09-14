@@ -23,7 +23,7 @@ struct ColorData {
     
     func loadColor() -> Color {
         guard let array = userDefaults.object(forKey: colorKey) as?
-                [CGFloat] else { return Color.black }
+                [CGFloat] else { return Color.gray.opacity(0.1) }
         let color = Color(.sRGB,
                           red: array[0],
                           green: array[1],

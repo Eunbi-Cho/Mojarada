@@ -80,10 +80,10 @@ struct TimerView: View {
         }
     }
     func colorChange() {
-        withAnimation(.easeInOut(duration: 10)) {
+        withAnimation(timerIsPaused ? nil : .easeInOut(duration: 10)) {
             bgColor = Color.accentColor
-            colorData.saveColor(color: bgColor)
         }
+        colorData.saveColor(color: bgColor)
     }
  
     func startTimer() {

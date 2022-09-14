@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var bgColor = Color.black
+
+    @State var bgColor = Color.gray.opacity(0.1)
     
     var body: some View {
         TabView {
